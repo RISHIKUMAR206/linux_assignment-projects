@@ -1,0 +1,189 @@
+// task name with commands and output /
+
+task 1: - Navigation & Directories 
+Q : a) check current directory
+command:
+pwd
+output
+/home/ubuntu
+
+b) list root 
+command:
+ls /
+output
+bin boot dev etc home media etc
+
+c) create folders desvops_practice
+command:
+mkdir devops_practice
+//and check devops_practice directory created or not //
+ls
+output 
+list will be show 
+devops_practice 
+
+d) create 3 files inside it
+ commands:
+touch newfile1.txt
+touch newfile2.txt
+touch newfile3.txt
+// and now we check this three file are created or not using list //
+ls
+output newfile1.txt newfile2.txt newfile3.txt
+task 2: -file operations
+
+a) create logs folder
+commands:
+mkdir logs
+// now we check this logs folder will created or not //
+ls
+output
+logs 
+
+b) move file1.txt into logs
+commands:
+mv newfile1.txt logs/
+// now we check newfile1.txt move in logs folder or not//
+cd logs 
+ls
+output:
+newfile1.txt
+
+c) rename file2.txt to config.txt
+commands:
+mv newfile2.txt config.txt
+// now we check newfile2.txt file name will rename into config.txt//
+ls
+output:
+config.txt
+
+d) copy file3.txt to backup.txt
+commands:
+cp newfile3.txt backup.txt
+
+d) delete logs folder
+commands:
+rm -r logs // and now we check this folder will we deleted or not //
+ls
+output:
+//using this this commands folder will deleted and using ls list you can see no logs folder will be exist//
+
+task 3: - file content 
+a) write sample text in config.txt 
+commands:
+nano config.txt 
+// using this commands you can see that one terminal is open amd you can writ any thing in terminal like iam writing hi my name is rishi// 
+// press ctrl + x to execute and y to save//
+// now using cat commands you can see or read file under content//
+cat config.txt
+output:
+hi my name is rishi
+
+b)  display content 
+commands:
+cat config.txt
+output:
+hi my name is rishi
+
+c) show first and last line
+commands:
+head -n 1 config.txt
+// this commands shows fisrt line whatever you write in file //
+output:
+hi my name is rishi
+// and if you want to see last line in file use tail commands//
+tail -n 1 config.txt
+ouput:
+hi my name is rishi
+
+
+task 4:- permissions 
+a) check permissions of config.txt 
+commands:
+ls  -l config.txt
+
+b) allow only owner read and write
+commands:
+chmod u+rw config.txt
+ 
+task 5:- search & find 
+a)search word 'rishi' and locate config.txt in system
+commands:
+grep rishi config.txt
+//so why we find rishi word in config.txt file //
+output:
+hi my name is rishi
+// so if you write this commands you can see rishi word will be highlight in red colors//
+
+b) locate config.txt file in system 
+commands:
+sudo find /home -name config.txt
+// if your system denied permission you can use sudo super user commands //
+output:
+password ubuntu:
+/home/ubuntu/config.txt
+task 6:- system info
+
+a) check username
+commands:
+whoami
+output:
+ubuntu
+b)hostname
+commands:
+hostname
+// to check hostname in your system//
+output:
+ubuntu
+
+c) running process
+commands:
+ps
+// if you want to check running process you can use ps//
+
+d) disk usage
+commands:
+df -h
+
+task 7:- archive & compress
+a) create tar archive of devops_practice
+commands:
+tar -cvf devops_practice.tar devops_practice
+// if you want comprees folder use tar commands 
+c: create
+v: verbose // show all file information//
+f:file // file name//
+x://extrat file//
+ls 
+// to check this file will be compress or not //
+output:
+devops_practice.tar
+
+b) compress and extract it
+commands:
+gzip devops_practice.tar
+ls
+output:
+devops_practice.tar.gz
+
+b2) extract it
+commands:
+tar -xvf devops_practice.tar.gz
+output:
+devops_pratice/
+
+task 8:- networking 
+a) find ip address
+commands:
+ip a
+output:
+you can see ip address inet and link 
+
+b) ping google (5 packets) 
+commands:
+ping -c 5 google.com
+
+c) check dns resolutions
+commands:
+nslookup google.com
+
