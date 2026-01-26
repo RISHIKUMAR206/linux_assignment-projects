@@ -1,4 +1,10 @@
-// task name with commands and output /
+# linux practice assignment 
+# submitted by : Rishi kumar jha
+# email : rishikumarjha005@gmail.com
+# total task : 8
+# course : cloud and devops
+
+// task name with commands and output //
 
 task 1: - Navigation & Directories 
 Q : a) check current directory
@@ -186,4 +192,5 @@ ping -c 5 google.com
 c) check dns resolutions
 commands:
 nslookup google.com
+
 
