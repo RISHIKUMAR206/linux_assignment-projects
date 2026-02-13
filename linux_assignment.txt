@@ -1,3 +1,38 @@
+About Task: 🐧📌 About This Assignment
+
+This Linux Practice Assignment includes 8 hands-on tasks covering basic to intermediate Linux concepts. 🖥️
+
+Each task contains:
+
+✅ The question
+
+✅ Command used
+
+✅ Output generated
+
+🐧 Topics Covered:
+
+📂 Navigation & Directory Management
+
+📁 File Operations
+
+📝 File Content Management
+
+🔐 File Permissions
+
+🔎 Search & Find Commands
+
+💻 System Information
+
+📦 Archive & Compression
+
+🌐 Basic Networking Commands
+
+This assignment showcases practical implementation of essential Linux commands and strengthens the foundation for Cloud & DevOps learning. 🚀🐧
+
+
+
+
 # linux practice assignment 
 # submitted by : Rishi kumar jha
 # email : rishikumarjha005@gmail.com
@@ -192,5 +227,6 @@ ping -c 5 google.com
 c) check dns resolutions
 commands:
 nslookup google.com
+
 
 
